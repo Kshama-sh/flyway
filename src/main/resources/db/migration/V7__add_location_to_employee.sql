@@ -1,0 +1,1 @@
+ALTER TABLE employee ADD COLUMN location VARCHAR(255) NOT NULL DEFAULT 'Remote';

@@ -1,0 +1,6 @@
+CREATE TABLE department (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL UNIQUE
+);
+ALTER TABLE employee ADD COLUMN department_id INT;
+ALTER TABLE employee ADD FOREIGN KEY (department_id) REFERENCES department(id) ON DELETE SET NULL;

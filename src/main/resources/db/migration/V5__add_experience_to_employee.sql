@@ -1,0 +1,1 @@
+ALTER TABLE employee ADD COLUMN experience INT NOT NULL DEFAULT 0;
